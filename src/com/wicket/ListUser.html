@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User list</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Full name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr wicket:id="users">
+        <td wicket:id="id"></td>
+        <td wicket:id="name"></td>
+        <td wicket:id="edit"><a href="#">edit</a></td>
+        <td wicket:id="remove"><a href="#">delete</a></td>
+    </tr>
+    </tbody>
+</table>
+ <br/>
+<form wicket:id="form">
+    <input type="text" wicket:id="id"/>
+    <br/>
+    <input type="text" wicket:id="name"/>
+    <br/>
+    <input type="submit" wicket:id="submit" value="Add user"/>
+    <br/>
+</form>
+<form wicket:id="userForm">
+    <p wicket:id="foundFullName"/>
+    <input type="text" wicket:id="queryFullName" placeholder="Enter name for search"/>
+    <br/>
+    <input type="submit" value="Find user"/>
+</form>
+ <br/>
+</body>
+</html>
+
+  

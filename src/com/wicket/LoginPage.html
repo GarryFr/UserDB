@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<wicket:head>
+    <title>Wicket Login Form Model</title>
+</wicket:head>
+<body>
+    <form id="loginForm" method="post" wicket:id="loginForm">
+         <p wicket:id="loginStatus" />
+         <fieldset>
+             <span>UserName: </span><input type="text" wicket:id="username" />
+            <BR>
+             <span>Password: </span><input type="password" wicket:id="password" /> 
+            <BR>
+            <p>
+                <input type="submit" name="Login" value="Login"/>
+            </p>
+        </fieldset>    
+  </form>        
+</body>
+</html>
